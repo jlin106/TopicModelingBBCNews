@@ -6,6 +6,10 @@ from nltk.stem import LancasterStemmer, WordNetLemmatizer
 import re, string, unicodedata, contractions, inflect
 from bs4 import BeautifulSoup
 
+import sqlite3
+import sys
+import csv
+
 def denoise_text(text):
     # remove text between brackets
     text = re.sub('\[[^]]*\]', '', text)
@@ -64,10 +68,7 @@ def lemmatize_verbs(words):
         lemmas.append(lemma)
     return lemmas
 
-import sqlite3
-import sys
-import csv
-
+# Connect to created database 
 con = sqlite3.connect('news.db')
 
 cur = con.cursor()
