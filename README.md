@@ -19,7 +19,7 @@ https://www.google.com/fusiontables/DataSource?docid=1z216Q5u4paybZrqnNEq2xVKBLL
 
 Files 
 -----
-- create_BBCnews_table.py - created SQLite database for the news articles and read in the BBC News dataset into a table
+- create_BBCnews_table.py - created SQLite database for the news articles and read in dataset into a table
 - preprocess_words.py - preprocess the words for each article in the table
 - create_LDAmodel.ipynb - create the LDA model 
 - create_Topic2Words.ipynb - create a csv file of each topic and top 10 associated words
