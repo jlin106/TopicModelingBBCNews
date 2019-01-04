@@ -16,3 +16,14 @@ In order to allow for an easier exploration of the results, a visualization tool
 
 Google Fusion Table Link:
 https://www.google.com/fusiontables/DataSource?docid=1z216Q5u4paybZrqnNEq2xVKBLLcyu3urb21QShzp
+
+Files 
+-----
+- create_BBCnews_table.py - created SQLite database for the news articles and read in the BBC News dataset into a table
+- preprocess_words.py - preprocess the words for each article in the table
+- create_LDAmodel.ipynb - create the LDA model 
+- create_Topic2Words.ipynb - create a csv file of each topic and top 10 associated words
+- topic2word_proportions.ipynb - create a csv file of each document and the topic proportions
+- find_top_topic.ipynb - find the top topic for each document
+- update_newsdatabase.ipynb - update BBC news table with corrected tags
+- fusiontable_data.ipynb - create separate uk table with the UK articles
